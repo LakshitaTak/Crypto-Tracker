@@ -1,13 +1,6 @@
 import React from "react";
 import "./styles.css"
 
-/*
--remove top bottom padding
--remove height from body
--convert dashboard into button
--make toggle switch
--fix font size of logo
-*/
 function Header (){
     return(
         <div className="navbar">

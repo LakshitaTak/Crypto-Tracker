@@ -18,7 +18,7 @@ function Header (){
                 <p className="link">Watchlist</p>
                 </a>
                 <a href="/">
-                <p className="link">Dashboard</p>
+                <button className="link">Dashboard</button>
                 </a>
                 
             </div>

@@ -2,14 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 3rem;
+    padding: 0rem 3rem;
     background-color: var(--black);
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .logo{
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 .links{

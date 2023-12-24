@@ -3,4 +3,5 @@
     padding: 0.7rem 1.5rem;
     color: var(--white);
     border-radius: 3rem;
+    cursor: pointer;
 }

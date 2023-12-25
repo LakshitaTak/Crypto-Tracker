@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import TemporaryDrawer from "./drawer";
+import Button from "../Button";
 
 function Header (){
     return(
@@ -19,7 +20,7 @@ function Header (){
                 <p className="link">Watchlist</p>
                 </a>
                 <a href="/">
-                <button className="link">Dashboard</button>
+                <Button text={"Dashboard"}/>
                 </a>
                 
             </div>

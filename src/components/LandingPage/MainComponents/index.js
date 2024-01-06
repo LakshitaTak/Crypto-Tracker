@@ -13,8 +13,8 @@ function MainComponents() {
           do so!
         </p>
         <div className="btn-flex">
-          <Button text={"Dashboard"} />
-          <Button text={"Share"} />
+          <Button text="Dashboard" />
+          <Button text="Share"/>
         </div>
       </div>
       <div>Phone</div>

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 1.5rem 3rem;
+    padding: 2rem 3rem;
 }
 
 .track-cypto-heading, .real-time-heading{

@@ -4,4 +4,7 @@
     color: var(--white);
     border-radius: 3rem;
     cursor: pointer;
+    width: 5rem;
+    font-weight: 600;
+    text-align: center;
 }

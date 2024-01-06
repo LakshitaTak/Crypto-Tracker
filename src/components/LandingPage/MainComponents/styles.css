@@ -1,0 +1,56 @@
+.flex-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem 3rem;
+}
+
+.track-cypto-heading,
+.real-time-heading {
+  font-size: 8rem;
+  margin: 0;
+}
+
+.track-cypto-heading {
+  color: var(--white);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--white);
+  margin-top: 0.67em;
+}
+
+@media only screen and (max-width: 800px) {
+  .track-cypto-heading,
+  .real-time-heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .track-cypto-heading,
+  .real-time-heading {
+    font-size: 5rem;
+  }
+}
+
+.track-cypto-heading:hover {
+  color: var(--black);
+  -webkit-text-stroke-color: var(--white);
+  transition: all 0.3s;
+}
+
+.info-text {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.real-time-heading {
+  color: var(--blue);
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+}

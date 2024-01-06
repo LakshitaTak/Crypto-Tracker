@@ -1,10 +1,14 @@
 import React from "react";
-import "./styles.css"
+import "./styles.css";
 
-function Button ({text}){
-    return(
-        <div className="btn">{text}</div>
-    )
-}
+export const Button = ({ text, variant }) => {
+  return (
+    <div
+      className={`${variant === "filled" ? "filled-btn" : "outlined-btn"} btn`}
+    >
+      {text}
+    </div>
+  );
+};
 
-export default Button
+export default Button;

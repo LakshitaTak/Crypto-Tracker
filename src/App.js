@@ -1,14 +1,20 @@
-import './App.css';
-import Header from './components/Common/Header';
-import Footer from './components/Common/Footer';
-import MainComponents from './components/LandingPage/MainComponents';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import HomePage from "./pages/HomePage";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      {/* <Footer/> */}
-      <MainComponents/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          {/* <Route path="" element={}/>
+          <Route path="" element={}/>
+          <Route path="" element={}/>*/}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Crypto-Tracker/static/css/main.fcf97044.css",
-    "main.js": "/Crypto-Tracker/static/js/main.bf32e978.js",
+    "main.css": "/Crypto-Tracker/static/css/main.9019d679.css",
+    "main.js": "/Crypto-Tracker/static/js/main.d4c1ec2a.js",
     "static/media/roboto-latin-500-normal.woff2": "/Crypto-Tracker/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/Crypto-Tracker/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/Crypto-Tracker/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -59,11 +59,11 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/Crypto-Tracker/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/Crypto-Tracker/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/Crypto-Tracker/index.html",
-    "main.fcf97044.css.map": "/Crypto-Tracker/static/css/main.fcf97044.css.map",
-    "main.bf32e978.js.map": "/Crypto-Tracker/static/js/main.bf32e978.js.map"
+    "main.9019d679.css.map": "/Crypto-Tracker/static/css/main.9019d679.css.map",
+    "main.d4c1ec2a.js.map": "/Crypto-Tracker/static/js/main.d4c1ec2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.fcf97044.css",
-    "static/js/main.bf32e978.js"
+    "static/css/main.9019d679.css",
+    "static/js/main.d4c1ec2a.js"
   ]
 }

@@ -2,26 +2,27 @@ import React from "react";
 import "./styles.css";
 import TemporaryDrawer from "./drawer";
 import Button from "../Button";
+import { Link } from "react-router-dom";
 
 function Header (){
     return(
         <div className="navbar">
             <h1 className="logo">CrytoTracker<span style={{color: "var(--blue)"}}>.</span></h1>
             <div className="links">
-                <a href="/">
+                <Link to="/">
                 <p className="link">Home</p>
-                </a>
+                </Link>
                 
-                <a href="/">
+                <Link to="/compare">
                 <p className="link">Compare</p>
-                </a>
+                </Link>
                 
-                <a href="/">
+                <Link to="/watchlist">
                 <p className="link">Watchlist</p>
-                </a>
-                <a href="/">
-                <Button text={"Dashboard"}/>
-                </a>
+                </Link>
+                <Link to="/dashboard">
+                <Button text="Dashboard" variant="filled" />
+                </Link>
                 
             </div>
             <div className="mobile-drawer">

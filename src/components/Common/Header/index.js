@@ -21,7 +21,7 @@ function Header (){
                 <p className="link">Watchlist</p>
                 </Link>
                 <Link to="/dashboard">
-                <Button text={"Dashboard"}/>
+                <Button text="Dashboard" variant="filled" />
                 </Link>
                 
             </div>

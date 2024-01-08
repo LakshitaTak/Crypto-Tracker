@@ -27,7 +27,7 @@ export default function TabsComponent({ coins }) {
         <TabPanel value="grid">
           <div>
             {coins.map((item, i) => (
-              <div>
+              <div key={item.id}>
                 <img src={item.image} alt="img"/>
                 <p>
                 {i + 1}.{item.name}

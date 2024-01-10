@@ -29,7 +29,7 @@ export default function TabsComponent({ coins }) {
         <TabPanel value="grid">
           <div className="grid-flex">
             {coins.map((coin, i) => (
-              <Grid coin={coin} key={i}/>
+              <Grid coin={coin} key={coin.id}/>
             ))}
           </div>
         </TabPanel>

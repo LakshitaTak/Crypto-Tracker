@@ -3,6 +3,8 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
+import Grid from "../Grid";
+import "./style.css"
 
 export default function TabsComponent({ coins }) {
   const [value, setValue] = useState("grid");
@@ -25,14 +27,9 @@ export default function TabsComponent({ coins }) {
           </TabList>
         </div>
         <TabPanel value="grid">
-          <div>
-            {coins.map((item, i) => (
-              <div key={item.id}>
-                <img src={item.image} alt="img"/>
-                <p>
-                {i + 1}.{item.name}
-              </p>
-              </div>
+          <div className="grid-flex">
+            {coins.map((coin, i) => (
+              <Grid coin={coin} key={coin.id}/>
             ))}
           </div>
         </TabPanel>

@@ -4,10 +4,10 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Grid from "../Grid";
-import "./style.css"
+import "./style.css";
 import List from "../List";
 
-export default function TabsComponent({ coins }) {
+export default function TabsComponent({ coins, searchInput }) {
   const [value, setValue] = useState("grid");
 
   const handleChange = (event, newValue) => {
@@ -17,6 +17,8 @@ export default function TabsComponent({ coins }) {
   const style = {
     color: "var(--white)",
   };
+
+  const isEmpty = coins.length === 0 && searchInput !== "";
 
   return (
     <div sx={{ width: "100%", typography: "body1" }}>
@@ -29,16 +31,24 @@ export default function TabsComponent({ coins }) {
         </div>
         <TabPanel value="grid">
           <div className="grid-flex">
-            {coins.map((coin, i) => (
-              <Grid coin={coin} key={coin.id}/>
-            ))}
+            {isEmpty ? (
+              <div>No Crypto Currencies Found</div>
+            ) : (
+              coins.map((coin, i) => (
+                <Grid coin={coin} key={coin.id} searchInput={searchInput} />
+              ))
+            )}
           </div>
         </TabPanel>
         <TabPanel value="list">
           <table className="list-table">
-            {coins.map((coin, i) => (
-              <List coin={coin} key={coin.id}/>
-            ))}
+            {isEmpty ? (
+              <div>No Crypto Currencies Found</div>
+            ) : (
+              coins.map((coin, i) => (
+                <List coin={coin} key={coin.id} searchInput={searchInput} />
+              ))
+            )}
           </table>
         </TabPanel>
       </TabContext>

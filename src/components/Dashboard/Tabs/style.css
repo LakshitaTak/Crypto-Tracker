@@ -6,3 +6,14 @@
     gap: 2rem;
     margin: 3rem 2rem;
 }
+
+.list-table{
+    width: 95%;
+}
+
+.grid-flex, .list-table {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    width: 100%;
+}

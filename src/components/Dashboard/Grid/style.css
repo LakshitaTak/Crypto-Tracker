@@ -24,7 +24,6 @@
     display: flex;
     justify-content: flex-start;
     gap: 1rem;
-    width: 100%;
 }
 
 .data-div{
@@ -102,6 +101,7 @@
     border: 1px solid;
     border-radius: 50%;
     padding: 0.35rem;
+    width: 1.6rem;
 }
 
 .tot-vol,.market-cap{

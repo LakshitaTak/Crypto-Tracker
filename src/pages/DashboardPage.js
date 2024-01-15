@@ -7,7 +7,7 @@ import PaginationComp from "../components/Dashboard/Pagination";
 function DashboardPage() {
   const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState("");
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
 
   const noOfItemsPerPage = 8;
 
@@ -27,21 +27,9 @@ function DashboardPage() {
 
   const noOfPages = Math.ceil(filteredCoins.length / noOfItemsPerPage);
 
-  // 1. [0,8]
-  // 1. [8,16]
-  // 1. [16,24]
   const paginatedCoins = filteredCoins.slice(
-    noOfItemsPerPage * page, 
-    noOfItemsPerPage * (page + 1)
-  );
-  console.log(
-    "noOfPages",
-    noOfPages,
-    "totalLength",
-    filteredCoins.length,
-    "paginatedCoins",
-    paginatedCoins, "page", page, "indexs", noOfItemsPerPage * page,
-    noOfItemsPerPage * page + 1
+    noOfItemsPerPage * (page - 1),
+    noOfItemsPerPage * page
   );
 
   useEffect(() => {
@@ -61,7 +49,7 @@ function DashboardPage() {
       <Header />
       <Search searchInput={search} handleInput={handleInput} />
       <TabsComponent coins={paginatedCoins} searchInput={search} />
-      <PaginationComp page={page} setPage={setPage} noOfPages={noOfPages}/>
+      <PaginationComp page={page} setPage={setPage} noOfPages={noOfPages} />
     </div>
   );
 }

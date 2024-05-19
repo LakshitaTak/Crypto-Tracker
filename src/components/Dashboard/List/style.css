@@ -1,0 +1,59 @@
+.list-row td{
+    width: 18%;
+    text-align: left;
+}
+
+.list-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    gap: 1rem;
+    width: 100%;
+}
+
+.list-row:hover{
+    background-color: var(--darkgrey);
+    border-radius: 1rem;
+    transition: all .3s;
+    border: none;
+}
+
+.coin-name-col{
+    margin: 0;;
+}
+
+.image-td {
+    margin-right: 2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content !important;
+}
+
+.coin-list-logo{
+    max-width: 50px;
+}
+
+.list-name-col{
+    text-align: left;
+}
+
+.list-price, list-tot-vol, list-market-cap{
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1100px){
+    .td-coin-chip-icon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .td-list-tot-vol{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    
+}

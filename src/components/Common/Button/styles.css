@@ -1,0 +1,19 @@
+.btn{
+    padding: 0.7rem 1.5rem;
+    color: var(--white);
+    border-radius: 3rem;
+    cursor: pointer;
+    width: 5rem;
+    font-weight: 600;
+    text-align: center;
+}
+.filled-btn{
+    background-color: var(--blue);
+}
+.outlined-btn{
+    background-color: transparent;
+    border: 2px solid var(--blue);
+}
+.outlined-btn:hover{
+    background-color: var(--blue);
+}   

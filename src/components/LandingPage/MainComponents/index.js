@@ -1,8 +1,11 @@
 import React from "react";
 import "./styles.css";
 import Button from "../../Common/Button";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import { RWebShare } from "react-web-share";
+=======
+>>>>>>> b4f5722aef3ee53e925408e65ad59fb5c78b0b3b
 
 function MainComponents() {
   return (

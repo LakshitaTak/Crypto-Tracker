@@ -13,12 +13,18 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "framer-motion": "^11.2.4",
+=======
+>>>>>>> b4f5722aef3ee53e925408e65ad59fb5c78b0b3b
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
+<<<<<<< HEAD
     "react-web-share": "^2.0.2",
+=======
+>>>>>>> b4f5722aef3ee53e925408e65ad59fb5c78b0b3b
     "web-vitals": "^2.1.4"
   },
   "scripts": {
